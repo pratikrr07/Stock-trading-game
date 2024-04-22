@@ -7,7 +7,7 @@ async function declareWinner(gameId) {
     let winner = null;
 
     for (let player of game.players) {
-        const value = await calculatePortfolioValue(player);
+        const value = await calculateMockPortfolioValue(player);
         if (value > highestValue) {
             highestValue = value;
             winner = player;

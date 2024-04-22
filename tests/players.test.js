@@ -165,7 +165,7 @@ test('Calculate portfolio value', async () => {
   
   test('Admin creates a new game', async () => {
     const response = await request(app)
-      .post('/api/admin/games/create') // Adjust the endpoint as needed
+      .post('/api/admin/create') // Adjust the endpoint as needed
       .send({
         name: 'New Game',
         startTime: new Date(),
@@ -184,7 +184,7 @@ test('Calculate portfolio value', async () => {
     beforeAll(async () => {
       // Create a new game
       const gameResponse = await request(app)
-        .post('/api/admin/games/create')
+        .post('/api/admin/create')
         .send({
           name: 'Winner Declaration Test',
           startTime: new Date(),
