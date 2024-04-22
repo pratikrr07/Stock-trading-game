@@ -3,7 +3,7 @@ const Player = require('./models/player');
 
 // Fetches the current stock price from Alpha Vantage API
 async function getStockPrice(symbol) {
-    const apiKey = 'JCM49K1U60I0BBMM'; // API key for Alpha Vantage
+    const apiKey = '741SEJWIU4W12X2L'; // API key for Alpha Vantage
     const functionType = 'GLOBAL_QUOTE';
     const baseURL = `https://www.alphavantage.co/query?function=${functionType}&symbol=${symbol}&apikey=${apiKey}`;
 

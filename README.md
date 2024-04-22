@@ -1,5 +1,5 @@
 ## A repository for CS3100 term project
-Stock Trading Game Web Application
+Stock Trading Game Web Application - https://youtu.be/_oq9CNEi0JI 
 --
 Project Overview-
 This web application serves as a platform for a stock trading game, allowing players to compete by trading stocks based on current NYSE prices. 
@@ -53,7 +53,52 @@ Bootstrap (/index.js): Initializes the database connection and starts the Expres
 
 Frontend
 =
-to be implemented in next sprint
+Frontend Overview
+====
+The frontend of our stock trading game application is built using React, a popular JavaScript library for building user interfaces. The application features a rich, client-side interface that allows users to interact with the game in real-time, providing functionalities such as user registration, dashboard viewing, stock buying and selling, leaderboard access, and administrative tasks.
+
+Key Components and Functionalities
+-------
+Register Component
+===
+Purpose: Facilitates user registration, enabling new players to sign up and participate in the stock trading game.
+
+Technologies Used: React for the component structure, HTML for form layout, and CSS for styling.
+
+Functionality: Captures user input through a form and submits it to the backend to register a new player.
+
+Dashboard Component
+===
+Purpose: Serves as the main interface for players, displaying their current cash balance, owned stocks, and providing options to buy or sell stocks.
+
+Technologies Used: React for dynamic content updates, axios for making HTTP requests to the backend, and CSS for styling.
+
+Functionality:
+Fetches and displays current player information, including cash balances and stock holdings.
+Integrates BuyComponent and SellComponent to enable stock transactions.
+Displays a leaderboard showing top players.
+
+AdminPage Component
+===
+
+Purpose: Allows administrative users to manage game settings, including creating games, renaming players, and providing feedback mechanisms.
+Technologies Used: React, axios for API interactions, and CSS for the admin interface design.
+
+Functionality:
+Enables game creation with custom start and end times.
+Allows for renaming of player accounts.
+Incorporates a feedback form for users to leave comments or suggestions.
+
+DeclareWinner Component
+===
+Integration Point:  its presence in routing suggests functionality for declaring the game's winner, likely an essential feature for the admin user.
+
+Technical Highlights
+
+React Router: Utilized for SPA (Single Page Application) navigation, enabling seamless transitions between different views (Register, Dashboard, AdminPage, DeclareWinner) without reloading the page.
+State Management: Uses React's useState and useEffect hooks for state management and side effects, respectively, ensuring that the UI is in sync with the application's state.
+Axios: Employed for promise-based HTTP requests to interact with the backend API, fetching data for display or submitting user actions.
+CSS: Dedicated CSS files for components (e.g., Dashboard.css, AdminPage.css) ensure modular and maintainable styling across the application.
 
 API Documentation
 ----
