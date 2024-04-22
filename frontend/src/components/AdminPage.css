@@ -1,0 +1,74 @@
+.admin-panel {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #000; /* Pure black for deep contrast */
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0, 255, 255, 0.2); /* Neon cyan shadow for a glowing effect */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #FFF; /* White text for high contrast */
+  }
+  
+  .admin-panel h2, .admin-panel h3 {
+    color: #0ff; /* Bright neon cyan for titles */
+  }
+  
+  .admin-panel h2 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .admin-panel h3 {
+    margin-top: 30px;
+    font-weight: 500;
+  }
+  
+  .form-section {
+    margin-bottom: 50px;
+    background: #111; /* Very dark grey for section backgrounds */
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: inset 0 2px 4px rgba(0, 255, 255, 0.1); /* Subtle inner neon glow */
+  }
+  
+  .form-section label {
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #0ff; /* Neon text for labels */
+  }
+  
+  .form-section input[type="text"],
+  .form-section input[type="datetime-local"] {
+    background-color: #222; /* Slightly lighter black for input backgrounds */
+    color: #0ff; /* Neon text color for inputs */
+    border: 1px solid #00FFFF; /* Neon cyan border */
+  }
+  
+  .form-section button {
+    background-color: #0ff; /* Neon cyan for buttons */
+    color: #000; /* Black text for contrast */
+    font-weight: 500;
+  }
+  
+  .form-section button:hover {
+    background-color: #00cccc; /* A slightly darker neon cyan for hover effect */
+  }
+  
+  .feedback {
+    background-color: #222; /* Matching dark background for feedback */
+    border-left: 6px solid #0ff; /* Bright neon border for emphasis */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .admin-panel {
+      margin: 20px;
+      padding: 20px;
+    }
+  
+    .form-section {
+      padding: 20px;
+    }
+  }
+  
